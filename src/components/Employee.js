@@ -16,16 +16,25 @@ class Employee extends Component{
     componentDidMount(){
         this.getEmployeeDetails();
     }
-
-    
+    handleInputChange = event =>{
+        const searchValue= event.target.value
+        console.log(searchValue)
+        const filteredEmployee = this.state.employees.filter(employee => {
+           if(employee.name.first.toLowerCase().includes(searchValue)){
+               return employee
+           }
+        })
+        this.setState({employees:filteredEmployee})
+        // console.log(filteredEmployee)
+    }
 
     render(){
-        console.log('employeeList', this.state.employeeList)
+        console.log('employeeList', this.state.employees)
         return(
             <div>
                 <div class="text-center">
                     <label for="search"> Search Name </label>
-                    <input type="text"/> <br/>
+                    <input type="text" onChange={this.handleInputChange}/> <br/>
                     <br/>
                 </div>
            
