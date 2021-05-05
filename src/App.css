@@ -35,4 +35,18 @@
   to {
     transform: rotate(360deg);
   }
+} 
+.head{
+  background-color:lightskyblue;
+  height:75px;
+  text-align: center;
+  font-weight:bolder;
+  font-size: x-large;
+}
+.subtext{
+  font-weight: normal;
+  font-size: small;
+}
+.text-center{
+  margin-top: 20px;
 }

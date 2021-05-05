@@ -1,23 +1,14 @@
-import logo from './logo.svg';
+import React from "react"
 import './App.css';
+import Employee from "./components/Employee"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div id="app">
+      <header class="head">Employee Directory
+      <p class="subtext"> Click on carrot in the name field to sort the name </p>
       </header>
+       <Employee />
     </div>
   );
 }
