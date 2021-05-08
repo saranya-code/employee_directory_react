@@ -50,3 +50,8 @@
 .text-center{
   margin-top: 20px;
 }
+.sort {
+  border: none;
+  background: none;
+  color: #fff
+}
